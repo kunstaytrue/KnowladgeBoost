@@ -25,6 +25,15 @@ class MainActivity : ComponentActivity() {
             var showScoreScreen = remember { mutableStateOf(false) }
             var questionIndex = remember { mutableStateOf(0) }
             var score = remember { mutableStateOf(0) }
+
+            val questions = listOf(
+                "Nelson Mandela was South Africa's first Black president",
+                "Apartheid began in 1994",
+                "The Soweto Uprising happened in 1986",
+                "F.W. de klerk helped end Apartheid ",
+                "The ANC was formed in 1994"
+            )
+            val answers = listOf( true,false,false ,true ,false)
         }
     }
 }
